@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/styles.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.37/moment-timezone-with-data-1970-2030.min.js"></script>
+    <title>World Clock</title>
+  </head>
+  <body>
+    <video autoplay loop muted>
+      <source
+        src="https://cdn.pixabay.com/video/2021/07/30/83236-581349064_large.mp4"
+        type="video/mp4"
+      />
+    </video>
+    <div class="container">
+      <h1>WORLD CLOCK</h1>
+
+      <select id="city">
+        <option value="">Select a city..</option>
+        <option value="current">My current location</option>
+        <option value="Pacific/Auckland">Auckland</option>
+        <option value="Europe/Berlin">Berlin</option>
+        <option value="Asia/Dubai">Dubai</option>
+        <option value="Africa/Johannesburg">Johannesburg</option>
+        <option value="Europe/Moscow">Moscow</option>
+        <option value="Europe/Paris">Paris</option>
+        <option value="Europe/Rome">Rome</option>
+        <option value="Australia/Sydney">Sydney</option>
+      </select>
+
+      <div id="cities">
+        <div class="city" id="new_york">
+          <div>
+            <h2>New York</h2>
+            <div class="date"></div>
+          </div>
+          <div class="time"></div>
+        </div>
+        <div class="city" id="london">
+          <div>
+            <h2>London</h2>
+            <div class="date"></div>
+          </div>
+          <div class="time"></div>
+        </div>
+        <div class="city" id="tokyo">
+          <div>
+            <h2>Tokyo</h2>
+            <div class="date"></div>
+          </div>
+          <div class="time"></div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      This project was coded by <strong>Irys Rodrigues</strong> and is
+      <a href="https://github.com/iryscrodrigues" target="_blank">
+        open sourced on GitHub</a
+      >
+    </footer>
+    <script src="./src/index.js"></script>
+  </body>
+</html>
